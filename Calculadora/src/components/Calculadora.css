@@ -1,32 +1,35 @@
+/* Estilo principal del contenedor de la calculadora */
 main {
-    background-color: var(--fondo-calculadora);
-    aspect-ratio: 9/16;
-    border-radius: 2rem;
-    height: 90%;
-    min-height: 550px;
-    box-shadow: var(--box-shadow);
-    padding: 1.5rem;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap:1rem
+  background-color: var(
+    --fondo-calculadora
+  ); /* Color de fondo definido por una variable CSS */
+  aspect-ratio: 9/16; /* Relación de aspecto de la calculadora */
+  border-radius: 1.5rem; /* Bordes redondeados */
+  height: 90%; /* Altura relativa al contenedor padre */
+  min-height: 550px; /* Altura mínima */
+  box-shadow: var(--box-shadow); /* Sombra definida por una variable CSS */
+  padding: 1.5rem; /* Espaciado interno */
+  display: grid; /* Uso de grid layout */
+  grid-template-columns: repeat(4, 1fr); /* Cuatro columnas de igual tamaño */
+  gap: 1rem; /* Espaciado entre los elementos del grid */
+}
 
-  }
+/* Estilo para los elementos span dentro del contenedor */
+span {
+  grid-column: span 4; /* El span ocupa las cuatro columnas del grid */
+  text-align: right; /* Alineación del texto a la derecha */
+  padding: 0 0.5rem; /* Espaciado interno horizontal */
+}
 
-  input{
-    grid-column: span 4;
-    text-align: right;
-    border:none ;
-    background-color:var(--fondo-calculadora) ;
-    padding: 0 .5rem;
-  }
+/* Estilo específico para el span que muestra el resultado */
+span.resultado {
+  color: var(--secundario); /* Color del texto definido por una variable CSS */
+  font-size: 3rem; /* Tamaño de fuente grande para el resultado */
+  height: 3rem; /* Altura del contenedor del resultado */
+}
 
-  input.resultado{
-    color: var(--secundario);
-    font-size: 3rem;
-  }
-
-  input.display{
-    font-size: 4rem;
-  }
-  
-
+/* Estilo específico para el span que actúa como display */
+span.display {
+  font-size: 2.5rem; /* Tamaño de fuente para el display */
+  height: 4rem; /* Altura del contenedor del display */
+}

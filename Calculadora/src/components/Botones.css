@@ -1,21 +1,30 @@
+/* Estilo base para los botones */
 button {
-  border: none;
-  border-radius: 1rem;
-  background-color: var(--terciario);
-  font-size: 2rem;
-  aspect-ratio: 1 / 1;
+  border: none; /* Sin borde */
+  border-radius: 1.5rem; /* Bordes redondeados */
+  background-color: var(
+    --terciario
+  ); /* Color de fondo definido por la variable CSS --terciario */
+  font-size: 2rem; /* Tamaño de fuente */
+  aspect-ratio: 1 / 1; /* Relación de aspecto 1:1 para hacer el botón cuadrado */
 }
 
- button:active {
-    transform: scale(1.02);
-  } 
-  
-  button.gris {
-    background-color: var(--secundario);
-  }
-  
-  button.operacion {
-    background-color: var(--primario);
-    color: #fff;
-  }
-  
+/* Efecto al presionar el botón */
+button:active {
+  transform: scale(1.02); /* Escala ligeramente el botón al ser presionado */
+}
+
+/* Estilo para los botones de color gris */
+button.gris {
+  background-color: var(
+    --secundario
+  ); /* Color de fondo definido por la variable CSS --secundario */
+}
+
+/* Estilo para los botones de operación */
+button.operacion {
+  background-color: var(
+    --primario
+  ); /* Color de fondo definido por la variable CSS --primario */
+  color: #fff; /* Color del texto blanco */
+}
